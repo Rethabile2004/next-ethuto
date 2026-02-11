@@ -37,9 +37,8 @@ export default function StudentSidebar() {
 
   return (
     <>
-      {/* MOBILE TOP BAR */}
       <header className="lg:hidden fixed top-0 w-full h-16 border-b bg-white flex items-center justify-between px-4 z-40">
-        <div className="font-bold text-xl">CUT</div>
+        <div className="font-bold text-xl">{pathname.split('/')[1]}</div>
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon">
@@ -53,7 +52,6 @@ export default function StudentSidebar() {
         </Sheet>
       </header>
 
-      {/* DESKTOP SIDEBAR */}
       <aside className="hidden lg:flex flex-col w-64 fixed inset-y-0 border-r bg-white p-4">
         <div className="mb-10 px-2 font-bold text-2xl">CUT</div>
         <div className="flex-1">
