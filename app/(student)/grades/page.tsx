@@ -180,7 +180,7 @@ export default function GradesPage() {
                   setFilterStatus(value)
                 }
               >
-                <SelectTrigger className="w-[150px]">
+                <SelectTrigger className="w-37.5">
                   <SelectValue placeholder="Filter by status" />
                 </SelectTrigger>
                 <SelectContent>
@@ -249,7 +249,7 @@ export default function GradesPage() {
 
       {/* Grade Details Dialog */}
       <Dialog open={selectedGrade !== null} onOpenChange={() => setSelectedGrade(null)}>
-        <DialogContent className="sm:max-w-[600px]">
+        <DialogContent className="sm:max-w-150">
           <DialogHeader>
             <DialogTitle>Grade Details</DialogTitle>
             <DialogDescription>
