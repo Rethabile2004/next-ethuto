@@ -14,9 +14,8 @@ import { toast } from "sonner"
 import PageTitle from "@/components/global/PageTitle"
 import { userData, type UserProfile } from "@/lib/user_data"
 
-export default function ProfilePage() {
+export default async function ProfilePage() {
   const [user, setUser] = useState<UserProfile>(userData)
-
   const updateUserField = (field: keyof UserProfile["profile"], value: string) => {
     setUser(prev => ({
       ...prev,

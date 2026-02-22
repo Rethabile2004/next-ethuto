@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PageTitle from '@/components/global/PageTitle'
 import {
   Card,
   CardContent,
@@ -92,12 +93,9 @@ export default function GradesPage() {
     <div className="flex-1 space-y-6 p-8">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight">Grades</h1>
-          <p className="text-muted-foreground">
-            View and manage your assignment grades
-          </p>
-        </div>
+        <PageTitle
+          title="Grades"
+        />
         <div className="flex items-center gap-2">
           <GraduationCap className="h-8 w-8 text-primary" />
         </div>
